@@ -10,3 +10,5 @@ file = list(map(lambda x: sorted(x, reverse=True) if x[0][0] == x[1][0] else sor
 
 # Get witch sections contains the other one of the pair
 file = list(map(lambda x: int(x[1][0] <= min(x[0][1], x[1][1])), file))
+
+print(sum(file))
